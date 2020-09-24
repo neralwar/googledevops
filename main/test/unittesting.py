@@ -5,7 +5,7 @@ class TestMainClass(unittest.TestCase):
         self.assertEquals(Mainclass.addnumber(4,5),9)
        
     def test_subnumber(self):
-        self.assertEqual(Mainclass.subnumber(8,3),5)
+        self.assertEqual(Mainclass.subnumber(8,3),9)
    
 
 if __name__ == '__main__':
