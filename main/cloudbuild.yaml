@@ -1,5 +1,5 @@
-step:
+steps:
     -name: 'gcr.io/cloud-builders/docker'
-     args: ['build', '-t', 'gcr.io/$PROJECT_ID/devopsdemo', '.']
+     args: ['build', '-t', 'gcr.io/blueprismintegration/devopsdemo', '.']
 images:
-    - 'gcr.io/$PROJECT_ID/devopsdemo'
+    - 'gcr.io/blueprismintegration/devopsdemo'
