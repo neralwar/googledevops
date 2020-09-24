@@ -1,0 +1,5 @@
+step:
+    -name: 'gcr.io/cloud-builders/docker'
+     args: ['build', '-t', 'gcr.io/blueprismintegration/devopsdemo', '.']
+images:
+    - 'gcr.io/blueprismintegration/devopsdemo'
