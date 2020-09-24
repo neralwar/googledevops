@@ -10,6 +10,8 @@ class Mainclass:
     def subnumber(self):
         return self.first - self.second
     
+print("Program Finished")
+    
 
 
 
