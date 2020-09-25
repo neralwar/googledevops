@@ -1,6 +1,7 @@
+"""
 steps:
     - name: 'gcr.io/cloud-builders/git'
-      args: ['clone','https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}']
+      args: ['clone', 'https://source.developers.google.com/p/${_PROJECT}/r/${_REPO_NAME}']
     - name: 'gcr.io/cloud-builders/docker'
       args: ['build','-t','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}','.']
     - name: 'gcr.io/cloud-builders/docker'
@@ -19,3 +20,4 @@ substitutions:
     
     # Developers ONLY change
     _VERSION: v1.0
+"""
