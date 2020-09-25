@@ -20,12 +20,12 @@ steps:
           - '--image'
           - 'gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
           - '--region'
-          - 'us-east4'
+          - 'asia-south1-a'
           - '--platform'
-          - 'managed'
+          - 'fully managed'
           - '--allow-unauthenticated'
-      #id: 'Deploy - Cloud Run'
-      #waitFor: ['Push-Image']
+      id: 'Deploy - Cloud Run'
+      waitFor: ['Push-Image']
 
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
