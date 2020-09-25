@@ -12,6 +12,20 @@ steps:
       args: ['push','gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}']
       id: 'Push-Image'
       waitFor: ['Build-Code']
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args:
+          - 'run'
+          - 'deploy'
+          - 'devopscloudrunapp'
+          - '--image'
+          - 'gcr.io/${_PROJECT}/${_CONTAINERNAME}:${_VERSION}'
+          - '--region'
+          - 'us-east4'
+          - '--platform'
+          - 'managed'
+          - '--allow-unauthenticated'
+      id: 'Deploy - Cloud Run'
+      waitFor: ['Push-Image']
 
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
