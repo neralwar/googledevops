@@ -3,5 +3,6 @@ WORKDIR /app
 COPY main/requirements.txt ./
 RUN pip install -r requirements.txt
 COPY main/src/mainscript.py /app
-CMD [ "python", "mainscript.py" ]
+COPY main/test/unittesting.py /app
+CMD [ "python", "unittesting.py" ]
 
