@@ -24,8 +24,8 @@ steps:
           - '--platform'
           - 'managed'
           - '--allow-unauthenticated'
-      id: 'Deploy - Cloud Run'
-      waitFor: ['Push-Image']
+      #id: 'Deploy - Cloud Run'
+      #waitFor: ['Push-Image']
 
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
