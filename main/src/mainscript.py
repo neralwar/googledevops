@@ -12,6 +12,6 @@ class Mainclass:
     
 print("Program Finished")
     
-
+print("Program Finished")
 
 
