@@ -20,4 +20,3 @@ substitutions:
     
     # Developers ONLY change
     _VERSION: v1.0
-"""
