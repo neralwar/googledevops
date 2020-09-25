@@ -9,13 +9,13 @@ steps:
 substitutions:
     #GCP Specific configuration. Please DON'T change anything
     _PROJECT: blueprismintegration
-    _ZONE: asia-south1-a
-    _GKE_CLUSTER: learn-gcp-with-mahesh-gke-cluster
+    #_ZONE: asia-south1-a
+    #_GKE_CLUSTER: learn-gcp-with-mahesh-gke-cluster
     
     #Repository Specific configuration. DevOps can change this settings
-    _DEPLOYMENTNAME: hello-world-service
+   # _DEPLOYMENTNAME: hello-world-service
     _CONTAINERNAME:  Devopscontainer    
-    _REPO_NAME: devopsdemo
+    _REPO_NAME: github_neralwar_googledevops
     
     # Developers ONLY change
     _VERSION: v1.0
