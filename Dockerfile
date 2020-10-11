@@ -1,9 +1,12 @@
 FROM python:3.8
-WORKDIR /app
-COPY main/requirements.txt ./
-RUN pip install -r requirements.txt
-COPY main/src/mainscript.py /app
-COPY main/test/unittesting.py /app
+WORKDIR /project
+COPY main/src /project/src
+COPY main/test /project/test
+COPY requirements.txt .
+COPY Dockerfile .
+COPY cloudbuild.yaml .
 
-CMD [ "python", "unittesting.py" ]
+CMD [ "python", "/project/test/unittesting.py" ]
+
+
 

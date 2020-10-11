@@ -2,14 +2,24 @@
 import unittest
 
 class TestMainClass(unittest.TestCase):
+    
+    def setUp(self):
+        pass
+        
     def test_addnumber(self):
-        print("FIRST TEST")
-        self.assertEquals(5,9)
+        
+       
+        self.assertEquals(3,3)
        
     def test_subnumber(self):
-        print("SECOND TEST")
-        self.assertEqual(5,5)
+        
+        self.assertEquals(2,3)
+        
+    def tearDown(self):
+        pass
    
 
 if __name__ == '__main__':
     unittest.main()
+    
+  

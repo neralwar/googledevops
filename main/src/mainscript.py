@@ -10,8 +10,14 @@ class Mainclass:
     def subnumber(self):
         return self.first - self.second
     
-print("Program Finished")
+
+#Unit Test Code
+''' obj = Mainclass(8,3)
+print(obj.addnumber())
+print(obj.subnumber()) '''
+
+
     
-print("Program Finished")
+
 
 
