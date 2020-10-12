@@ -1,1 +1,3 @@
 #Django==latest
+pytest == 2.9.1
+pytest-html ==latest
